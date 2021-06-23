@@ -8,10 +8,10 @@ app = Flask(__name__)
 
 
 # Your policies audience tag
-POLICY_AUD = os.getenv("POLICY_AUD")
+POLICY_AUD = os.getenv("28f4e2d6ef56b3752c34409a104c22f77fcc13a4dc5a26308a424d5404dcab95")
 
 # Your CF Access team domain
-TEAM_DOMAIN = os.getenv("TEAM_DOMAIN")
+TEAM_DOMAIN = os.getenv("https://greenturtle.cloudflareaccess.com")
 CERTS_URL = "{}/cdn-cgi/access/certs".format(TEAM_DOMAIN)
 
 def _get_public_keys():
