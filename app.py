@@ -6,14 +6,13 @@ import json
 import os
 app = Flask(__name__)
 
-
 # Your policies audience tag
 POLICY_AUD = os.getenv("POLICY_AUD")
-
+print(POLICY_AUD)
 # Your CF Access team domain
 TEAM_DOMAIN = os.getenv("TEAM_DOMAIN")
 CERTS_URL = "{}/cdn-cgi/access/certs".format(TEAM_DOMAIN)
-
+print(TEAM_DOMAIN)
 def _get_public_keys():
     """
     Returns:
